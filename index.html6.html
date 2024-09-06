@@ -1,0 +1,65 @@
+<!DOCTYPE index.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUENAS TARDES GIRL  </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            color: #00796b;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .yes-btn {
+            background-color: #00796b;
+            color: white;
+        }
+        .no-btn {
+            background-color: #0076b1;
+            color: #ffffff;
+            cursor: not-allowed;
+        }
+        .no-btn:active {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> BUENAS TARDES GIRL, COMO AMANECISTE DANNA?</h1>
+        <button class="yes-btn" onclick="respuesta('BIEN')">BIEN</button>
+        <button class="yes-btn" onclick="respuesta('DIZQUE BIEN XD')">DIZQUE BIEN XD</button>
+    <script>
+        function respuesta(opcion) {
+            if (opcion === 'BIEN') {
+                alert('QUE BUENO ME ALEGRO :) <3');
+            } if (opcion === 'DIZQUE BIEN XD') {
+                alert('PORQUE :( ?');
+            }
+        }
+    </script>
+    </div>
+</HTML>
